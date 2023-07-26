@@ -1,0 +1,33 @@
+<script>
+//const obj = {
+       // name: "hilal",
+        //age: 23,
+        //hobby:function(uname){
+          //  document.write(`this is ${this.name}, my age is ${this.age} okay ur name is ${uname}`);
+       // }
+
+   // }
+    
+    //obj.hobby("jalal");
+
+
+    const obj = {
+        name: "hilal",
+        age: 23,
+        hobby:function(uname){
+            document.write(`this is ${this.name}, my age is ${this.age} okay ur name is ${uname}. \n \n`);
+        }
+
+    }
+    obj.hobby("jalal");
+    document.write("\n");
+
+    const obj2 = {
+        name: "kamaran",
+        age: 33
+      
+       
+
+    }
+    obj.hobby.call(obj2,"suliman");
+</script>
